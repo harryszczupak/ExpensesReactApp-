@@ -2,7 +2,7 @@ import GraphBar from './GraphBar';
 import './Graph.css';
 const Graph = ({ dataPoints }) => {
 	const dataPointsValues = dataPoints.map((dataPoint) => dataPoint.value);
-
+	console.log(dataPointsValues);
 	const totalMaximum = Math.max(...dataPointsValues);
 
 	return (

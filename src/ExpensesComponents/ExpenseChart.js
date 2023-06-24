@@ -17,6 +17,7 @@ const ExpenseChart = ({ expenses }) => {
 	for (const expense of expenses) {
 		const expenseMonth = expense.date.getMonth();
 		chartDatapoints[expenseMonth].value += expense.amount;
+	
 	}
 
 	return <Graph dataPoints={chartDatapoints}></Graph>;

@@ -9,6 +9,7 @@ function App() {
 		setNewExpense((prev) => {
 			return [enterData, ...prev];
 		});
+	
 	};
 
 	return (
